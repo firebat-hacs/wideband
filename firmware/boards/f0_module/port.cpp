@@ -135,7 +135,8 @@ Configuration* GetConfiguration()
     auto sel2 = readSelPin(ID_SEL2_PORT, ID_SEL2_PIN);
 
     // See https://github.com/mck1117/wideband/issues/11 to explain this madness
-    switch (3 * sel1 + sel2) {
+    //switch (3 * sel1 + sel2) {
+    switch (4) {
         case 0: config.CanIndexOffset = 2; break;
         case 1: config.CanIndexOffset = 0; break;
         case 2: config.CanIndexOffset = 3; break;
